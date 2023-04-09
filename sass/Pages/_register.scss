@@ -1,0 +1,78 @@
+.register-form {
+  width: 450px;
+  padding: 50px 20px 50px 20px;
+  background-color: rgba(19, 180, 238, 0.218);
+  margin: auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 4px 4px 60px 22px rgba(119, 171, 211, 0.2);
+  -moz-box-shadow: 4px 4px 60px 22px rgba(108, 188, 249, 0.2);
+  box-shadow: 4px 4px 60px 22px rgba(34, 60, 80, 0.2);
+  margin-top: 200px;
+
+  h2 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  input {
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0px;
+       background: #e73c7e55;
+
+    color: white;
+    font-size: 18px;
+    padding: 18px;
+    &::placeholder {
+      color: white;
+    }
+  }
+
+  button {
+    padding: 10px;
+    margin-top: 25px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    background: #e73c7e55;
+    font-size: 24px;
+    border-radius: 5px;
+    padding: 18px;
+
+    color: white;
+  }
+
+  a {
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+.register {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

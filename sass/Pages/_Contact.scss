@@ -1,0 +1,36 @@
+/* Modal oynani shakl va uslubi */
+.modal {
+  display: none; /* oynani ochishdan oldin oynani yashiring */
+  position: fixed; /* qo'shimcha holatda joylashtiring */
+  z-index: 1; /* modal oynani boshqa elementlardan ko'proq ko'rsatish */
+  left: 0;
+  top: 0;
+  width: 100%; /* oyna to'liq ekranni egallashi kerak */
+  height: 100%; /* oyna to'liq ekranni egallashi kerak */
+  overflow: auto; /* agar modal oyna uzun bo'lsa, s-krollarni joylashtirish */
+  background-color: rgba(0, 0, 0, 0.4); /* fonni qorala */
+}
+
+/* Modal oyna mazmuni uslubi */
+.modal-content {
+  background-color: #fefefe; /* oyna fon rangi */
+  margin: 15% auto; /* oyna mazmunining ortasiga joylashtirish */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* oyna kengligi */
+}
+
+/* Modal yopish tugmasi uslubi */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

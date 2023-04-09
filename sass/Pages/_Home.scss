@@ -1,0 +1,279 @@
+// form{
+//     max-width: 500px;
+//     width: 100%;
+//     height: 50vh;
+//     margin: 200px auto;
+// }
+
+.toPage {
+  min-height: 60vh;
+}
+
+.pageLinkWrapp {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pageTitle {
+  color: #2548e6;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 30px 0 90px 0;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cta {
+  display: flex;
+  padding: 10px 45px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: white !important;
+  background: #2569e6;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+}
+.cta2 {
+  display: flex;
+  padding: 10px 45px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: white !important;
+  background: #25e6d6;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+}
+.cta3 {
+  display: flex;
+  padding: 10px 45px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: white !important;
+  background: #e625a6;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+}
+
+.cta:focus {
+  outline: none;
+  color: #ffff;
+}
+.cta2:focus {
+  outline: none;
+  color: #ffff;
+}
+.cta3:focus {
+  outline: none;
+  color: #ffff;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #fbc638;
+}
+.cta2:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #fbc638;
+}
+.cta3:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #fbc638;
+}
+.cta span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+.cta2 span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+.cta3 span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+.cta:hover span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+.cta2:hover span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+.cta3:hover span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+span {
+  transform: skewX(15deg);
+  &:hover {
+    color: #fff !important;
+  }
+}
+
+span:nth-child(2) {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+path.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+path.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+  animation: color_anim 1s infinite 0.2s;
+}
+.cta2:hover path.three {
+  animation: color_anim 1s infinite 0.2s;
+}
+.cta3:hover path.three {
+  animation: color_anim 1s infinite 0.2s;
+}
+.cta:hover path.one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta2:hover path.one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+.cta3:hover path.one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+.cta:hover path.two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+.cta2:hover path.two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+.cta3:hover path.two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #fbc638;
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+//  Backgroun Animation
+
+.animaa {
+  background: url("https://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-12/island.png")
+    repeat-x 100% -460px;
+  background-size: 780px;
+}
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+}
+.boat {
+  width: 380px;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  z-index: -1;
+}
+.boat img {
+  width: 100%;
+}
+.boat::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 120px;
+  background: url("https://treehouse-code-samples.s3.amazonaws.com/CSS-DD/codepen/stage-12/steam.png")
+    no-repeat;
+  background-size: 120px;
+  position: absolute;
+  top: -25%;
+  left: 5%;
+  opacity: 0;
+}
+.mike {
+  width: 180px;
+  position: absolute;
+  top: 55%;
+  left: -15%;
+  -webkit-transform: rotateZ(-5deg);
+}
+
+/*	Animations - WebKit only
+------------------------------------------ */
+
+.boat {
+  -webkit-animation: rock-boat 3s ease-in-out infinite;
+}
+.boat::after {
+  -webkit-animation: steam 4s 2s infinite;
+}
+.animaa {
+  -webkit-animation: bg-move 4s ease-out;
+  /*
+  -webkit-animation-direction: alternate-reverse; // 'alternate-reverse' allows the animation to begin in reverse. 
+  */
+
+  -webkit-animation-fill-mode: forward;
+  /* 'animation-fill-mode' allows us to define the styles of the animated element before and after the animation runs. 
+  
+  'animation-fill-mode' value of 'backwards' means that the animation begin with the first keyframe even if the animiation is delayed.
+  With 'forwards', the animation's final keyframe continues to apply even after the iteration completes. This way the background does not reset itself and remains a that last keyframe. The background then only resets its default position through a refresh or some other method. 
+  'both' maintains the 1st keyframe on the delay and has the animation hold on the last keyframe. 
+  */
+}
+
+/*	Keyframes - WebKit only
+------------------------------------------ */
+
+@-webkit-keyframes rock-boat {
+  50% {
+    -webkit-transform: rotate(-5deg) translateY(-10px);
+  }
+}
+@-webkit-keyframes steam {
+  40%,
+  60% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-15%, -35%) rotateZ(20deg);
+  }
+}
+@-webkit-keyframes bg-move {
+  0% {
+    background-position: 100% -560px;
+  }
+  100% {
+    background-position: -350% -460px;
+  }
+}
+
